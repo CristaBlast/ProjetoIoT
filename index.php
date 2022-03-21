@@ -16,7 +16,7 @@
 	$username="a";
 	$password="1";
 
-	if($_POST['inputUser']=="Babuska" && $_POST['inputPassword']=="TheMaschine")
+	if($_POST['inputUser']=="a" && $_POST['inputPassword']=="1")
 	{
 		header("Location: http://127.0.0.1/IOT/dashboard.php");
 	}
@@ -26,25 +26,7 @@
 		echo "F*ck";
 	}
 
-	/*
-	if(isset($_POST['username']))
-	{
-		echo "O username foi submetido foi: ".$POST['username']."<br>";
-	}
-	
-	if(isset($_POST['password']))
-	{
-		echo "A passaword foi submetido foi: ".$POST['password']."<br>";
-	}
-	*/
-	
-	/*
-	echo"<h1>Olá Mundo</h1>";
-	$dia=21;
-	$mes=3;
-	$ano=2022;
-	echo "Today's date: ".$dia."/".$mes."/".$ano;
-	*/
+
 ?>
 	<div class="container">
 		<form class="form_UP" method="post">
