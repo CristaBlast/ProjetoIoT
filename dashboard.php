@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="CSS\styleD.css">
+	<link rel="stylesheet" href="CSS\style.css">
 	<link rel="stylesheet" href="bootstrap\css\bootstrap.min.css">
 	<script src="bootstrap\js\bootstrap.bundle.min.js"></script>
 	<title>Plataforma IoT</title>
@@ -13,7 +13,7 @@
 	session_start();
 	if(!isset($_SESSION['user']) && !isset($_SESSION['pass']))
 	{
-		header("Location: http://127.0.0.1/IOT/index.php");
+		header("Location: http://127.0.0.1/ProjetoIoT/");
 		die("acesso restrito");
 	}
   

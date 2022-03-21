@@ -1,6 +1,25 @@
-.form_UP
+.bgColor
 {
-	width: 350px;
-	padding: 15px;
-	margin: 0 auto;
+	background: #35395A;
+	color: white;
+}
+
+.logo
+{
+	width: 100%;
+}
+
+.form_UP {
+  width: 350px;
+  padding: 15px;
+  margin: 0 auto;
+}
+
+#estgImg {
+  width: 300px;
+}
+
+#icons {
+  width: 50%;
+  text-align: center;
 }
