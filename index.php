@@ -26,7 +26,6 @@
 		echo "F*ck";
 	}
 
-
 ?>
 	<div class="container">
 		<form class="form_UP" method="post">

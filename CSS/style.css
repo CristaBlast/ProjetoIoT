@@ -1,12 +1,15 @@
 .bgColor
 {
-	background: #35395A;
+	/*background: #35395A;*/
 	color: white;
+	background-image: linear-gradient(to right, #35395A , #4d4f6d);
+	
 }
 
 .logo
 {
 	width: 100%;
+	
 }
 
 .form_UP {
