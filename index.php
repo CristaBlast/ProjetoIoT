@@ -13,8 +13,8 @@
 	session_start();
 	$_SESSION["user"]=$_POST['inputUser'];
 	$_SESSION["pass"]=$_POST['inputPassword'];
-	$username="Babuska";
-	$password="TheMaschine";
+	$username="a";
+	$password="1";
 
 	if($_POST['inputUser']=="Babuska" && $_POST['inputPassword']=="TheMaschine")
 	{
