@@ -1,3 +1,11 @@
+<?php
+	session_start();
+	if(!isset($_SESSION['user']) && !isset($_SESSION['pass']))
+	{
+		header("Location: http://127.0.0.1/ProjetoIoT/");
+		die("acesso restrito");
+	}
+?>
 <!doctype html>
 <html lang="pt">
   <head>
@@ -9,26 +17,17 @@
 	<title>Plataforma IoT</title>
   </head>
   <body>
-  <?php
-	session_start();
-	if(!isset($_SESSION['user']) && !isset($_SESSION['pass']))
-	{
-		header("Location: http://127.0.0.1/ProjetoIoT/");
-		die("acesso restrito");
-	}
-  
-  
-    echo "<div class='container'>
+    <div class='container'>
 		<div class='card'>
 			<div class='card-body'>
 				<img src='Photos/estgLogo.png' class='float-end' alt='ESTG icon' id='estgImg'>
 				<h1 class='card-title'>Servidor IoT</h1>
-				<p>Bem vindo <b>".$_SESSION['user']." </b><a href='logout.php'>logout</a></p>
+				<p>Bem vindo <b><?php $_SESSION['user'] ?> </b><a href='logout.php'>logout</a></p>
 				<small>Tecnologias da Internet - Engenharia Informática</small>
 			</div>
 		</div>
-	</div>";
-	?>
+	</div>
+	
 	<div class="container text-center">
 		<div class="row">
 			<div class="col-sm-4">
