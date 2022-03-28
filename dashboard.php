@@ -5,6 +5,9 @@
 		header("Location: http://127.0.0.1/ProjetoIoT/");
 		die("acesso restrito");
 	}
+	/*$valorT = file_get_contents("API/FILES/TEMPERATURA/valor.txt");
+	$horaT = file_get_contents("API/FILES/TEMPERATURA/hora.txt");
+	$nomeT = file_get_contents("API/FILES/TEMPERATURA/nome.txt");*/
 ?>
 <!doctype html>
 <html lang="pt">
@@ -17,6 +20,7 @@
 	<title>Plataforma IoT</title>
   </head>
   <body>
+	  <br>
     <div class='container'>
 		<div class='card'>
 			<div class='card-body'>
@@ -27,7 +31,7 @@
 			</div>
 		</div>
 	</div>
-	
+	<br>
 	<div class="container text-center">
 		<div class="row">
 			<div class="col-sm-4">
@@ -65,9 +69,98 @@
 		  </div>
 		</div>
 	</div>
+	<br>
 	<div class="card">
 		<div class="card-header">
-			<b>Tabela de Sensores</b>
+			<b>Quarto</b>
+		</div>
+			<div class="card-body">
+				<table class="table">
+				  <thead>
+					<tr>
+					  <th scope="col">Tipo de Dispositivos IoT</th>
+					  <th scope="col">Valor</th>
+					  <th scope="col">Data de atualização</th>
+					  <th scope="col">Estado de Alertas</th>
+					</tr>
+				  </thead>
+				  <tbody>
+					<tr>
+					  <td>Sensor de Luz</td>
+					  <td>100%</td>
+					  <td>-</td>
+					  <td>@mdo</td>
+					</tr>
+					<tr>
+					  <td>Temperatura</td>
+					  <td>22º</td>
+					  <td>-</td>
+					  <td>@fat</td>
+					</tr>
+					<tr>
+					  <td>Humidade</td>
+					  <td>85%</td>
+					  <td>-</td>
+					  <td>-</td>
+					</tr>
+					<tr>
+					  <td>luminusidade</td>
+					  <td>80%</td>
+					  <td>-</td>
+					  <td>-</td>
+					</tr>
+				  </tbody>
+				</table>
+			</div>
+		</div>
+
+	<div class="card">
+		<div class="card-header">
+			<b>Cozinha</b>
+		</div>
+			<div class="card-body">
+				<table class="table">
+				  <thead>
+					<tr>
+					  <th scope="col">Tipo de Dispositivos IoT</th>
+					  <th scope="col">Valor</th>
+					  <th scope="col">Data de atualização</th>
+					  <th scope="col">Estado de Alertas</th>
+					</tr>
+				  </thead>
+				  <tbody>
+					<tr>
+					  <td>Sensor de Luz</td>
+					  <td>100%</td>
+					  <td>-</td>
+					  <td>@mdo</td>
+					</tr>
+					<tr>
+					  <td>Temperatura</td>
+					  <td>22º</td>
+					  <td>-</td>
+					  <td>@fat</td>
+					</tr>
+					<tr>
+					  <td>Humidade</td>
+					  <td>85%</td>
+					  <td>-</td>
+					  <td>-</td>
+					</tr>
+					<tr>
+					  <td>luminusidade</td>
+					  <td>80%</td>
+					  <td>-</td>
+					  <td>-</td>
+					</tr>
+				  </tbody>
+				</table>
+			</div>
+		</div>
+
+	<div class="card">
+		<div class="card-header">
+			<b>WC</b>
 		</div>
 			<div class="card-body">
 				<table class="table">
