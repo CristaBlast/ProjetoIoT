@@ -29,7 +29,7 @@
 ?>
 	<div class="container">
 		<form class="form_UP" method="post">
-			<a href="http://127.0.0.1/ProjetoIoT/"><img src="Photos\AbibiHotel.png" class="logo"></a>
+			<a href="http://127.0.0.1/ProjetoIoT/"><img src="Photos\abibiHotel.png" class="logo"></a>
 		  <div class="mb-3">
 			<label for="inputUser"class="form-label">Username:</label>
 			<input type="text" placeholder="Username" class="form-control" id="inputUser" name="inputUser" required>

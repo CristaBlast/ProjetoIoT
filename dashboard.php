@@ -68,8 +68,59 @@
 				</div>
 		  </div>
 		</div>
+		<br>
+		<div class="row">
+			<div class="col-sm-4">
+				<div class="card">
+					<div class="card-header"><b>Fumo e Gás: Não detetado </b></div>
+					<div class="card-body">
+						<img src="Photos/fire_gas.png" class="card-img-top" alt="sun icon" id="icons">
+					</div>
+					<div class="card-footer">
+						Atualização: <a href="">History</a>
+					</div>
+				</div>
+		  </div>
+		  <div class="col-sm-4">
+			<div class="card">
+					<div class="card-header"><b>Movimento: Não detetado</b></div>
+					<div class="card-body">
+						<img src="Photos/movimento.png" class="card-img-top" alt="sun icon" id="icons">
+					</div>
+					<div class="card-footer">
+						Atualização: <a href="">History</a>
+					</div>
+				</div>
+		  </div>
+		  <div class="col-sm-4">
+			<div class="card">
+					<div class="card-header"><b>Ventoinha: Desativada</b></div>
+					<div class="card-body">
+						<img src="Photos/fan.png" class="card-img-top" alt="sun icon" id="icons">
+					</div>
+					<div class="card-footer">
+						Atualização: <a href="">History</a>
+					</div>
+				</div>
+		  </div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-sm-4">
+				<div class="card">
+					<div class="card-header"><b>Janelas: Fechadas </b></div>
+					<div class="card-body">
+						<img src="Photos/window.png" class="card-img-top" alt="sun icon" id="icons">
+					</div>
+					<div class="card-footer">
+						Atualização: <a href="">History</a>
+					</div>
+				</div>
+		  </div>
+		</div>
 	</div>
 	<br>
+	<!--
 	<div class="card">
 		<div class="card-header">
 			<b>Quarto</b>
@@ -113,7 +164,7 @@
 				</table>
 			</div>
 		</div>
-
+	<br>
 	<div class="card">
 		<div class="card-header">
 			<b>Cozinha</b>
@@ -157,7 +208,7 @@
 				</table>
 			</div>
 		</div>
-
+	<br>
 	<div class="card">
 		<div class="card-header">
 			<b>WC</b>
@@ -201,5 +252,6 @@
 				</table>
 			</div>
 		</div>
+	<br>-->
   </body>
 </html>
