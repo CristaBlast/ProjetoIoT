@@ -9,56 +9,46 @@ if (!isset($_SESSION['user']) && !isset($_SESSION['pass'])) {
 	//Sensor Gás Fumo
 $valorC_GF = file_get_contents("api/files/cozinha/gas_fumo/valor.txt");
 $horaC_GF = file_get_contents("api/files/cozinha/gas_fumo/hora.txt");
-//$nomeC_GF = file_get_contents("api/files/cozinha/gas_fumo/nome.txt");
 
 	//Sensor Movimento
 $valorC_M = file_get_contents("api/files/cozinha/movimento/valor.txt");
 $horaC_M = file_get_contents("api/files/cozinha/movimento/hora.txt");
-//$nomeC_M = file_get_contents("api/files/cozinha/movimento/nome.txt");
 
 
 //Quarto
 	//Sensor Gás Fumo
 $valorQ_GF = file_get_contents("api/files/quarto/gas_fumo/valor.txt");
 $horaQ_GF = file_get_contents("api/files/quarto/gas_fumo/hora.txt");
-//$nomeC_GF = file_get_contents("api/files/cozinha/gas_fumo/nome.txt");
 	
 	//Sensor Luminosidade
 $valorQ_L = file_get_contents("api/files/quarto/luminosidade/valor.txt");
 $horaQ_L = file_get_contents("api/files/quarto/luminosidade/hora.txt");
-//$nomeC_M = file_get_contents("api/files/cozinha/movimento/nome.txt");
 
 	//Motor
 $valorQ_M = file_get_contents("api/files/quarto/motor/valor.txt");
 $horaQ_M = file_get_contents("api/files/quarto/motor/hora.txt");
-//$nomeC_GF = file_get_contents("api/files/cozinha/gas_fumo/nome.txt");
 	
 	//Sensor Movimento
 $valorQ_Mv = file_get_contents("api/files/quarto/movimento/valor.txt");
 $horaQ_Mv = file_get_contents("api/files/quarto/movimento/hora.txt");
-//$nomeC_M = file_get_contents("api/files/cozinha/movimento/nome.txt");
 
 	//Sensor Temperatura
 $valorQ_T = file_get_contents("api/files/quarto/temperatura/valor.txt");
 $horaQ_T = file_get_contents("api/files/quarto/temperatura/hora.txt");
-//$nomeC_GF = file_get_contents("api/files/cozinha/gas_fumo/nome.txt");
-	
+
 
 //WC
 	//Sensor Gás Fumo
 $valorWC_GF = file_get_contents("api/files/wc/gas_fumo/valor.txt");
 $horaWC_GF = file_get_contents("api/files/wc/gas_fumo/hora.txt");
-//$nomeC_GF = file_get_contents("api/files/cozinha/gas_fumo/nome.txt");
-	
+
 	//Sensor Movimento
 $valorWC_Mv = file_get_contents("api/files/wc/movimento/valor.txt");
 $horaWC_Mv = file_get_contents("api/files/wc/movimento/hora.txt");
-//$nomeC_M = file_get_contents("api/files/cozinha/movimento/nome.txt");
 
 	//Sensor Temperatura
 $valorWC_T = file_get_contents("api/files/wc/temperatura/valor.txt");
 $horaWC_T = file_get_contents("api/files/wc/temperatura/hora.txt");
-//$nomeC_M = file_get_contents("api/files/cozinha/movimento/nome.txt");
 ?>
 
 <!doctype html>
@@ -66,7 +56,7 @@ $horaWC_T = file_get_contents("api/files/wc/temperatura/hora.txt");
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="refresh" content="5">
+	<meta http-equiv="refresh" content="">
 	<link rel="stylesheet" href="CSS\style.css">
 	<link rel="stylesheet" href="bootstrap\css\bootstrap.min.css">
 	<script src="bootstrap\js\bootstrap.bundle.min.js"></script>
@@ -86,7 +76,9 @@ $horaWC_T = file_get_contents("api/files/wc/temperatura/hora.txt");
 			</div>
 		</div>
 	</div>
-	<br>
+	<div class="container text-center">
+		<img src='Photos/room_plant.png' alt='room plant'>
+	</div>
 
 	<!--Quarto-->
 
@@ -214,11 +206,23 @@ $horaWC_T = file_get_contents("api/files/wc/temperatura/hora.txt");
 					</div>
 				</div>
 			</div>
+			<div class="col-sm-3">
+				<div class="card">
+					<div class="card-header"><b>Porta: Fechada</b></div>
+					<div class="card-body">
+						<img src="Photos/door.png" class="card-img-top" alt="sun icon" id="icons">
+					</div>
+					<div class="card-footer">
+						Atualização: <a href="">History</a>
+					</div>
+				</div>
+			</div>	
 		</div>
 	</div>
 	<br><br>
 
-	<!--WC-->
+
+	<!--Cozinha-->
 
 	
 	<br>
