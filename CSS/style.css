@@ -6,12 +6,6 @@
 	
 }
 
-.logo
-{
-	width: 100%;
-	
-}
-
 .form_UP {
   width: 350px;
   padding: 15px;
@@ -24,8 +18,19 @@
   height: auto;
 }
 
-#estgImg {
-  width: 300px;
+.logo
+{
+  width: 100%;
+}
+
+.mainProfile
+{
+  background-color: #4d4f6d;
+  color: white;
+}
+
+#hotelImg {
+  width: 100px;
 }
 
 #icons {

@@ -13,17 +13,16 @@
 	session_start();
 	$_SESSION["user"]=$_POST['inputUser'];
 	$_SESSION["pass"]=$_POST['inputPassword'];
-	$username="admin";
-	$password="admin";
 
-	if($_POST['inputUser']=="admin" && $_POST['inputPassword']=="admin")
+
+	if(file_exists("login/".$_POST['inputUser'].".txt") && $_POST['inputPassword']==file_get_contents("login/".$_POST['inputUser'].".txt"))
 	{
 		header("Location: http://127.0.0.1/ProjetoIoT/dashboard.php");
 	}
 	
 	else
 	{
-		echo "F*ck";
+		echo "Login Não Sucedido";
 	}
 
 ?>
