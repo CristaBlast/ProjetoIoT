@@ -23,14 +23,21 @@
   width: 100%;
 }
 
-.mainProfile
+.mainColorBG
 {
   background-color: #4d4f6d;
   color: white;
 }
 
+#banner
+{
+  width: 40%;
+  float: right;
+  margin-right: 15%;
+}
+
 #hotelImg {
-  width: 100px;
+  width: 13%;
 }
 
 #icons {

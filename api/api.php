@@ -26,6 +26,7 @@
 			file_put_contents("files/".$_POST['nome']."/log.txt",$_POST['hora']);
 		}
 	}
+
 	elseif($_SERVER['REQUEST_METHOD'] == 'GET')
 	{
 		
@@ -33,19 +34,16 @@
 		{
 			echo file_get_contents("files/cozinha/".$_GET['nome']."/valor.txt");
 
-			echo "oi";
 		}
 		if(isset($_GET['nome']) && file_exists("files/quarto/".$_GET['nome']."/valor.txt"))
 		{
 			echo file_get_contents("files/quarto/".$_GET['nome']."/valor.txt");
 
-			echo "oiI";
 		}
 		if(isset($_GET['nome']) && file_exists("files/wc/".$_GET['nome']."/valor.txt"))
 		{
 			echo file_get_contents("files/wc/".$_GET['nome']."/valor.txt");
 
-			echo "oiII	";
 		}
 		else
 		{
