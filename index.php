@@ -14,7 +14,7 @@
 	$_SESSION["user"]=$_POST['inputUser'];
 	$_SESSION["pass"]=$_POST['inputPassword'];
 
-
+	//Verificamos se existe o utilizador através de verificar se existe um ficheiro com o nome do user e dentro do ficheiro .txt está a password do user
 	if(file_exists("login/".$_POST['inputUser'].".txt") && $_POST['inputPassword']==file_get_contents("login/".$_POST['inputUser'].".txt"))
 	{
 		header("Location: http://127.0.0.1/ProjetoIoT/dashboard.php");
