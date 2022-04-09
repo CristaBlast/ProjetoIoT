@@ -29,7 +29,7 @@
 
 	elseif($_SERVER['REQUEST_METHOD'] == 'GET')
 	{
-		
+		if(isset($_GET[]))
 		if(isset($_GET['nome']) && file_exists("files/cozinha/".$_GET['nome']."/valor.txt"))
 		{
 			echo file_get_contents("files/cozinha/".$_GET['nome']."/valor.txt");

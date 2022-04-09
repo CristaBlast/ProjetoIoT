@@ -110,7 +110,7 @@ $horaWC_MP = file_get_contents("api/files/wc/motor_porta/hora.txt");
 						<img src="Photos/dia.png" class="card-img-top" alt="sun icon" id="icons">
 					</div>
 					<div class="card-footer ">
-						Atualização: <?php echo $horaQ_L?> <a href="api/files/quarto/luminosidade/log.txt">History</a>
+						Atualização: <?php echo $horaQ_L?> <a href="api/files/quarto/luminosidade/log.txt" target="_blank">History</a>
 					</div>
 				</div>
 			</div>
@@ -121,7 +121,7 @@ $horaWC_MP = file_get_contents("api/files/wc/motor_porta/hora.txt");
 						<img src="Photos/temperature.png" class="card-img-top" alt="sun icon" id="icons">
 					</div>
 					<div class="card-footer">
-						Atualização: <?php echo $horaQ_T?> <a href="api/files/quarto/temperatura/log.txt">History</a>
+						Atualização: <?php echo $horaQ_T?> <a href="api/files/quarto/temperatura/log.txt" target="_blank">History</a>
 					</div>
 				</div>
 			</div>
@@ -132,7 +132,7 @@ $horaWC_MP = file_get_contents("api/files/wc/motor_porta/hora.txt");
 						<img src="Photos/door.png" class="card-img-top" alt="sun icon" id="icons">
 					</div>
 					<div class="card-footer">
-						Atualização: <?php echo $horaQ_MP?> <a href="api/files/quarto/motor_porta/log.txt">History</a>
+						Atualização: <?php echo $horaQ_MP?> <a href="api/files/quarto/motor_porta/log.txt" target="_blank">History</a>
 					</div>
 				</div>
 			</div>
@@ -143,7 +143,7 @@ $horaWC_MP = file_get_contents("api/files/wc/motor_porta/hora.txt");
 						<img src="Photos/fire_gas.png" class="card-img-top" alt="sun icon" id="icons">
 					</div>
 					<div class="card-footer">
-						Atualização: <?php echo $horaQ_GF?> <a href="api/files/quarto/gas_fumo/log.txt">History</a>
+						Atualização: <?php echo $horaQ_GF?> <a href="api/files/quarto/gas_fumo/log.txt" target="_blank">History</a>
 					</div>
 				</div>
 			</div>
@@ -157,7 +157,7 @@ $horaWC_MP = file_get_contents("api/files/wc/motor_porta/hora.txt");
 						<img src="Photos/movimento.png" class="card-img-top" alt="sun icon" id="icons">
 					</div>
 					<div class="card-footer">
-						Atualização: <?php echo $horaQ_Mv?> <a href="api/files/quarto/movimento/log.txt">History</a>
+						Atualização: <?php echo $horaQ_Mv?> <a href="api/files/quarto/movimento/log.txt" target="_blank">History</a>
 					</div>
 				</div>
 			</div>
@@ -168,7 +168,7 @@ $horaWC_MP = file_get_contents("api/files/wc/motor_porta/hora.txt");
 						<img src="Photos/fan.png" class="card-img-top" alt="sun icon" id="icons">
 					</div>
 					<div class="card-footer">
-						Atualização: <?php echo $horaQ_MV?> <a href="api/files/quarto/motor_ventoinha/log.txt">History</a>
+						Atualização: <?php echo $horaQ_MV?> <a href="api/files/quarto/motor_ventoinha/log.txt" target="_blank">History</a>
 					</div>
 				</div>
 			</div>
@@ -179,7 +179,7 @@ $horaWC_MP = file_get_contents("api/files/wc/motor_porta/hora.txt");
 						<img src="Photos/window.png" class="card-img-top" alt="sun icon" id="icons">
 					</div>
 					<div class="card-footer">
-						Atualização: <?php echo $horaQ_MJ?> <a href="api/files/quarto/motor_janelas/log.txt">History</a>
+						Atualização: <?php echo $horaQ_MJ?> <a href="api/files/quarto/motor_janelas/log.txt" target="_blank">History</a>
 					</div>
 				</div>
 			</div>
@@ -205,7 +205,7 @@ $horaWC_MP = file_get_contents("api/files/wc/motor_porta/hora.txt");
 						<img src="Photos/fire_gas.png" class="card-img-top" alt="sun icon" id="icons">
 					</div>
 					<div class="card-footer">
-						Atualização: <?php echo $horaWC_GF?> <a href="api/files/wc/gas_fumo/log.txt">History</a>
+						Atualização: <?php echo $horaWC_GF?> <a href="api/files/wc/gas_fumo/log.txt" target="_blank">History</a>
 					</div>
 				</div>
 			</div>
@@ -216,7 +216,7 @@ $horaWC_MP = file_get_contents("api/files/wc/motor_porta/hora.txt");
 						<img src="Photos/movimento.png" class="card-img-top" alt="sun icon" id="icons">
 					</div>
 					<div class="card-footer">
-						Atualização: <?php echo $horaWC_Mv?> <a href="api/files/wc/movimento/log.txt">History</a>
+						Atualização: <?php echo $horaWC_Mv?> <a href="api/files/wc/movimento/log.txt" target="_blank">History</a>
 					</div>
 				</div>
 			</div>
@@ -227,7 +227,7 @@ $horaWC_MP = file_get_contents("api/files/wc/motor_porta/hora.txt");
 						<img src="Photos/door.png" class="card-img-top" alt="sun icon" id="icons">
 					</div>
 					<div class="card-footer">
-						Atualização: <?php echo $horaWC_MP?> <a href="api/files/wc/motor_porta/log.txt">History</a>
+						Atualização: <?php echo $horaWC_MP?> <a href="api/files/wc/motor_porta/log.txt" target="_blank">History</a>
 					</div>
 				</div>
 			</div>	
@@ -253,7 +253,7 @@ $horaWC_MP = file_get_contents("api/files/wc/motor_porta/hora.txt");
 						<img src="Photos/fire_gas.png" class="card-img-top" alt="sun icon" id="icons">
 					</div>
 					<div class="card-footer">
-						Atualização: <?php echo $horaC_GF?> <a href="api/files/cozinha/fumo_gas/log.txt">History</a>
+						Atualização: <?php echo $horaC_GF?> <a href="api/files/cozinha/fumo_gas/log.txt" target="_blank">History</a>
 					</div>
 				</div>
 			</div>
@@ -264,7 +264,7 @@ $horaWC_MP = file_get_contents("api/files/wc/motor_porta/hora.txt");
 						<img src="Photos/movimento.png" class="card-img-top" alt="sun icon" id="icons">
 					</div>
 					<div class="card-footer">
-						Atualização: <?php echo $horaC_Mv?> <a href="api/files/cozinha/movimento/log.txt">History</a>
+						Atualização: <?php echo $horaC_Mv?> <a href="api/files/cozinha/movimento/log.txt" target="_blank">History</a>
 					</div>
 				</div>
 			</div>
@@ -275,7 +275,7 @@ $horaWC_MP = file_get_contents("api/files/wc/motor_porta/hora.txt");
 						<img src="Photos/temperature.png" class="card-img-top" alt="sun icon" id="icons">
 					</div>
 					<div class="card-footer">
-						Atualização: <?php echo $horaC_T?> <a href="api/files/cozinha/temperatura/log.txt">History</a>
+						Atualização: <?php echo $horaC_T?> <a href="api/files/cozinha/temperatura/log.txt" target="_blank">History</a>
 					</div>
 				</div>
 			</div>
