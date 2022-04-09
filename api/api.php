@@ -1,49 +1,29 @@
 	<?php
 
     header('Content-Type: text/html; charset=utf-8');
-	echo $_SERVER['REQUEST_METHOD']."<br>";
+	//echo $_SERVER['REQUEST_METHOD']."<br>";
+	//F	t: place=quarto&valor=42&nome=temperatura&hora=2021/03/25 00:31
+
 	if($_SERVER['REQUEST_METHOD'] == 'POST')
 	{
-		if(isset($_POST['valor']) && isset($_POST['hora']) && isset($_POST['nome']) && isset($_POST['hora']))
+		if(isset($_POST['valor']) && isset($_POST['hora']) && isset($_POST['nome']) && isset($_POST['place']))
 		{
-			file_put_contents("files/".$_POST['nome']."/valor.txt",$_POST['valor']);
-			file_put_contents("files/".$_POST['nome']."/hora.txt",$_POST['hora']);
-			file_put_contents("files/".$_POST['nome']."/nome.txt",$_POST['nome']);
-			file_put_contents("files/".$_POST['nome']."/log.txt",$_POST['hora']);
+			echo ($POST['Place']);
+			file_put_contents("files/".$_POST['place']."/".$_POST['nome']."/valor.txt",$_POST['valor']);
+			file_put_contents("files/".$_POST['place']."/".$_POST['nome']."/valor.txt",$_POST['nome']);
+			file_put_contents("files/".$_POST['place']."/".$_POST['nome']."/valor.txt",$_POST['hora']);
 		}
-		if(isset($_POST['valor']) && isset($_POST['hora']) && isset($_POST['nome']) && isset($_POST['hora']))
-		{
-			file_put_contents("files/".$_POST['nome']."/valor.txt",$_POST['valor']);
-			file_put_contents("files/".$_POST['nome']."/hora.txt",$_POST['hora']);
-			file_put_contents("files/".$_POST['nome']."/nome.txt",$_POST['nome']);
-			file_put_contents("files/".$_POST['nome']."/log.txt",$_POST['hora']);
-		}
-		if(isset($_POST['valor']) && isset($_POST['hora']) && isset($_POST['nome']) && isset($_POST['hora']))
-		{
-			file_put_contents("files/".$_POST['nome']."/valor.txt",$_POST['valor']);
-			file_put_contents("files/".$_POST['nome']."/hora.txt",$_POST['hora']);
-			file_put_contents("files/".$_POST['nome']."/nome.txt",$_POST['nome']);
-			file_put_contents("files/".$_POST['nome']."/log.txt",$_POST['hora']);
-		}
+
 	}
 
+
+	
+	//Format http://127.0.0.1/ProjetoIoT/api/api.php?place=quarto&nome=temperatura
 	elseif($_SERVER['REQUEST_METHOD'] == 'GET')
 	{
-		if(isset($_GET[]))
-		if(isset($_GET['nome']) && file_exists("files/cozinha/".$_GET['nome']."/valor.txt"))
+		if(isset($_GET['place']) && isset($_GET['nome']) && file_exists("files/".$_GET['place']."/".$_GET['nome']."/valor.txt"))
 		{
-			echo file_get_contents("files/cozinha/".$_GET['nome']."/valor.txt");
-
-		}
-		if(isset($_GET['nome']) && file_exists("files/quarto/".$_GET['nome']."/valor.txt"))
-		{
-			echo file_get_contents("files/quarto/".$_GET['nome']."/valor.txt");
-
-		}
-		if(isset($_GET['nome']) && file_exists("files/wc/".$_GET['nome']."/valor.txt"))
-		{
-			echo file_get_contents("files/wc/".$_GET['nome']."/valor.txt");
-
+			echo file_get_contents("files/".$_GET['place']."/".$_GET['nome']."/valor.txt");
 		}
 		else
 		{
