@@ -19,9 +19,13 @@ $horaC_A = file_get_contents("api/files/cozinha/aspersor/hora.txt");
 $valorC_F = file_get_contents("api/files/cozinha/fumo/valor.txt");
 $horaC_F = file_get_contents("api/files/cozinha/fumo/hora.txt");
 
-	//Janelas
-$valorC_J = file_get_contents("api/files/cozinha/janelas/valor.txt");
-$horaC_J = file_get_contents("api/files/cozinha/janelas/hora.txt");
+	//Janela Up
+$valorC_JU = file_get_contents("api/files/cozinha/janelaUp/valor.txt");
+$horaC_JU = file_get_contents("api/files/cozinha/janelaUp/hora.txt");
+
+	//Janela Left
+$valorC_JL = file_get_contents("api/files/cozinha/janelaLeft/valor.txt");
+$horaC_JL = file_get_contents("api/files/cozinha/janelaLeft/hora.txt");
 
 	//Luzes Da Cozinha
 $valorC_L = file_get_contents("api/files/cozinha/luz/valor.txt");
