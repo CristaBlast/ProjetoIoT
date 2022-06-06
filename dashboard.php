@@ -69,9 +69,9 @@ $horaQ_A = file_get_contents("api/files/quarto/aspersor/hora.txt");
 $valorQ_F = file_get_contents("api/files/quarto/fumo/valor.txt");
 $horaQ_F = file_get_contents("api/files/quarto/fumo/hora.txt");
 
-	//Janelas
-$valorQ_J = file_get_contents("api/files/quarto/janelas/valor.txt");
-$horaQ_J = file_get_contents("api/files/quarto/janelas/hora.txt");
+	//Janela
+$valorQ_J = file_get_contents("api/files/quarto/janela/valor.txt");
+$horaQ_J = file_get_contents("api/files/quarto/janela/hora.txt");
 
 	//Luzes Do Quarto
 $valorQ_L = file_get_contents("api/files/quarto/luz/valor.txt");
@@ -176,9 +176,9 @@ $horaWC_T = file_get_contents("api/files/wc/temperatura/hora.txt");
 		<div class="row">
 			<div class="col-sm-3">
 				<div class="card">
-					<div class="card-header"><b>Ar Condicionado: <?php echo $valorQ_C?></b></div>
+					<div class="card-header"><b>Ar Condicionado: <?php if($valorQ_J==0){echo 'Fechadas';}else{echo 'Abertas';}?></b></div>
 					<div class="card-body ">
-						<img src="Photos/dia.png" class="card-img-top" alt="sun icon" id="icons">
+						<img src="Photos/arCondicionado.png" class="card-img-top" alt="sun icon" id="icons">
 					</div>
 					<div class="card-footer ">
 						Atualização: <?php echo $horaQ_C?> <a href="api/files/quarto/ar_condicionado/log.txt" target="_blank">History</a>
@@ -187,9 +187,9 @@ $horaWC_T = file_get_contents("api/files/wc/temperatura/hora.txt");
 			</div>
 			<div class="col-sm-3">
 				<div class="card">
-					<div class="card-header"><b>Aspersor De Teto: <?php echo $valorQ_A?></b></div>
+					<div class="card-header"><b>Aspersor De Teto: <?php if($valorQ_J==0){echo 'Fechadas';}else{echo 'Abertas';}?></b></div>
 					<div class="card-body">
-						<img src="Photos/temperature.png" class="card-img-top" alt="sun icon" id="icons">
+						<img src="Photos/aspersor.png" class="card-img-top" alt="sun icon" id="icons">
 					</div>
 					<div class="card-footer">
 						Atualização: <?php echo $horaQ_A?> <a href="api/files/quarto/aspersor/log.txt" target="_blank">History</a>
@@ -198,9 +198,9 @@ $horaWC_T = file_get_contents("api/files/wc/temperatura/hora.txt");
 			</div>
 			<div class="col-sm-3">
 				<div class="card">
-					<div class="card-header"><b>Sensor De Fumo: <?php echo $valorQ_F?></b></div>
+					<div class="card-header"><b>Sensor De Fumo: <?php if($valorQ_J==0){echo 'Fechadas';}else{echo 'Abertas';}?></b></div>
 					<div class="card-body">
-						<img src="Photos/door.png" class="card-img-top" alt="sun icon" id="icons">
+						<img src="Photos/smoke.png" class="card-img-top" alt="sun icon" id="icons">
 					</div>
 					<div class="card-footer">
 						Atualização: <?php echo $horaQ_F?> <a href="api/files/quarto/fumo/log.txt" target="_blank">History</a>
@@ -209,12 +209,12 @@ $horaWC_T = file_get_contents("api/files/wc/temperatura/hora.txt");
 			</div>
 			<div class="col-sm-3">
 				<div class="card">
-					<div class="card-header"><b>Janelas: <?php echo $valorQ_J?></b></div>
+					<div class="card-header"><b>Janelas: <?php if($valorQ_J==0){echo 'Fechadas';}else{echo 'Abertas';}?></b></div>
 					<div class="card-body">
-						<img src="Photos/fire_gas.png" class="card-img-top" alt="sun icon" id="icons">
+						<img src="Photos/window.png" class="card-img-top" alt="sun icon" id="icons">
 					</div>
 					<div class="card-footer">
-						Atualização: <?php echo $horaQ_J?> <a href="api/files/quarto/janelas/log.txt" target="_blank">History</a>
+						Atualização: <?php echo $horaQ_J?> <a href="api/files/quarto/janela/log.txt" target="_blank">History</a>
 					</div>
 				</div>
 			</div>
@@ -225,7 +225,7 @@ $horaWC_T = file_get_contents("api/files/wc/temperatura/hora.txt");
 				<div class="card">
 					<div class="card-header"><b>Luz: <?php echo $valorQ_L?></b></div>
 					<div class="card-body">
-						<img src="Photos/movimento.png" class="card-img-top" alt="sun icon" id="icons">
+						<img src="Photos/dia.png" class="card-img-top" alt="sun icon" id="icons">
 					</div>
 					<div class="card-footer">
 						Atualização: <?php echo $horaQ_L?> <a href="api/files/quarto/luz/log.txt" target="_blank">History</a>
@@ -234,9 +234,9 @@ $horaWC_T = file_get_contents("api/files/wc/temperatura/hora.txt");
 			</div>
 			<div class="col-sm-3">
 				<div class="card">
-					<div class="card-header"><b>Sensor De Movimento: <?php echo $valorQ_MJ?></b></div>
+					<div class="card-header"><b>Sensor De Movimento: <?php if($valorQ_J==0){echo 'Fechadas';}else{echo 'Abertas';}?></b></div>
 					<div class="card-body">
-						<img src="Photos/fan.png" class="card-img-top" alt="sun icon" id="icons">
+						<img src="Photos/movimento.png" class="card-img-top" alt="sun icon" id="icons">
 					</div>
 					<div class="card-footer">
 						Atualização: <?php echo $horaQ_M?> <a href="api/files/quarto/movimento/log.txt" target="_blank">History</a>
@@ -247,7 +247,7 @@ $horaWC_T = file_get_contents("api/files/wc/temperatura/hora.txt");
 				<div class="card">
 					<div class="card-header"><b>Temperatura: <?php echo $valorQ_T?></b></div>
 					<div class="card-body">
-						<img src="Photos/window.png" class="card-img-top" alt="sun icon" id="icons">
+						<img src="Photos/temperatura.png" class="card-img-top" alt="sun icon" id="icons">
 					</div>
 					<div class="card-footer">
 						Atualização: <?php echo $horaQ_T?> <a href="api/files/quarto/temperatura/log.txt" target="_blank">History</a>

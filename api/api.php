@@ -9,8 +9,8 @@
 		if(isset($_POST['valor']) && isset($_POST['hora']) && isset($_POST['nome']) && isset($_POST['place']))
 		{
 			file_put_contents("files/".$_POST['place']."/".$_POST['nome']."/valor.txt",$_POST['valor']);
-			file_put_contents("files/".$_POST['place']."/".$_POST['nome']."/valor.txt",$_POST['nome']);
-			file_put_contents("files/".$_POST['place']."/".$_POST['nome']."/valor.txt",$_POST['hora']);
+			file_put_contents("files/".$_POST['place']."/".$_POST['nome']."/nome.txt",$_POST['nome']);
+			file_put_contents("files/".$_POST['place']."/".$_POST['nome']."/hora.txt",$_POST['hora']);
 		}
 
 	}
