@@ -23,8 +23,6 @@ try :
             else:
                 print("Nothing to report")
                 
-                
-                
         
 except KeyboardInterrupt: # caso haja interrupção de teclado CTRL+C
     print( "Programa terminado pelo utilizador")
