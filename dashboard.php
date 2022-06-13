@@ -134,7 +134,7 @@ $horaWC_T = file_get_contents("api/files/wc/temperatura/hora.txt");
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="refresh" content="4">
+	<meta http-equiv="refresh" content="1">
 	<link rel="stylesheet" href="CSS\style.css">
 	<link rel="stylesheet" href="bootstrap\css\bootstrap.min.css">
 	<script src="bootstrap\js\bootstrap.bundle.min.js"></script>
@@ -164,8 +164,12 @@ $horaWC_T = file_get_contents("api/files/wc/temperatura/hora.txt");
 			}
 			?>.jpg' alt='plant'>
 	</div>
+	<br><br>
 
-
+	<div class="container text-center">
+		<img src="Photos/hallway.png" alt="hallway Cam">
+	</div>
+	<br>
 	<!--Entrada-->
 
 

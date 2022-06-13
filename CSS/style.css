@@ -44,3 +44,15 @@
   width: 50%;
   text-align: center;
 }
+
+.imgCamera{
+  text-align: center;
+  width: auto;
+}
+
+.divCam
+{
+  text-align: center;
+  width: 100px;
+  height: auto;
+}
