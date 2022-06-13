@@ -3,8 +3,6 @@ import keyboard
 
 bruh=1
 
-print("Clica multiplas vezes em X para acabar o programa")
-
 while bruh==1:
     camera = cv2.VideoCapture('http://192.168.1.105:4747/video')
     ret, image = camera.read()

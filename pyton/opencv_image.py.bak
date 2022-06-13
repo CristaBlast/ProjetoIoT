@@ -1,7 +1,0 @@
-import cv2
-camera = cv2.VideoCapture('http://10.20.228.13:4747/video')
-ret, image = camera.read()
-print ("Resultado da Camera=" + str(ret))
-cv2.imwrite('..\Photos\opencv_image.png',image)
-camera.release()
-cv2.destroyAllWindows()
